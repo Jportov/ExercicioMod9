@@ -9,14 +9,16 @@ public class ConversaoVariavel {
         System.out.print("Digite um número inteiro: ");
         int numeroInteiro = scanner.nextInt();
 
-        // Convertendo o valor inteiro para double
-        double numeroConvertido = (double) numeroInteiro;
+        // Convertendo o valor inteiro para o tipo Wrapper Integer
+        Integer numeroWrapper = Integer.valueOf(numeroInteiro);
 
         // Imprimindo o valor original e o valor convertido
-        System.out.println("Número inteiro: " + numeroInteiro);
-        System.out.println("Número convertido para double: " + numeroConvertido);
+        System.out.println("Número inteiro (primitivo): " + numeroInteiro);
+        System.out.println("Número convertido para Integer (Wrapper): " + numeroWrapper);
 
         // Fechando o scanner
         scanner.close();
     }
 }
+
+
